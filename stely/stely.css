@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --header-color:green;
+    --auxiliar-color:rgb(221, 214, 214);
+    --auxiliar--cor2:#fff;
+    --tamanho-banners:75%;
+    --font-color:black;
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    align-items: center;
+}
+
+header #logo{
+    height: 60%;
+    margin-left: 10px;
+    
+    
+}
+
+header input{
+    height: 25%;
+    width: 15%;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: green;
+    margin-right: 10px;
+}
+
+#banner{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--auxiliar-color);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 75vh;
+    padding-top: 1rem;
+}
+
+#principal{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#principal img{
+    width: 90%;
+}
+
+#principal a{
+    color: var(--font-color) ;
+    text-decoration: none;
+}
+
+#sub{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+}
+
+#sub a img{
+    width: var(--tamanho-banners);
+}
+
+.banners{
+    padding-top: 1rem;
+}
+
+footer{
+    background-color: var(--header-color);
+    height: 25vh;
+    width: 100%;
+}
+
+@media(max-width:450px){
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    header input{
+        display: none;
+    }
+
+    #banner{
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #principal{
+        width: 100%;
+        height: 50%;
+    }
+
+    #principal h1{
+        text-align: center;
+    }
+
+    #sub{
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    #sub a {
+        width: 80%;
+        height: 10vh;
+    }
+
+    #sub a img{
+        width: 100%;
+    }
+
+}
